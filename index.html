@@ -4,17 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>learn</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/main.min.css" />
   </head>
   <body>
-    <header>
+    <header class="header" id="header">
+      <a href="#" class="header-logo">Brit <span class="header-logo-span">lex</span></a>
       <nav>
-        <a href="#">Britlex</a>
         <ul class="header-list">
           <li class="header-item">
             <a class="header-item-link" href="#">Home</a>
@@ -36,8 +38,8 @@
       <button class="header-button">Let’s Talk</button>
     </header>
     <main>
-      <section class="learn">
-        <div>
+      <section class="learn" id="learn">
+        <div class="learn-wrap">
           <h1 class="learn-title">Learn Any Foreign Language</h1>
           <p class="learn-text">
             With our teachers who write a program for each student, you will be
@@ -46,11 +48,11 @@
           <button class="learn-button">Get started</button>
         </div>
         <div>
-          <img
+          <!-- <img
             src="img/Learning languages-bro 1.png"
             alt="learn"
             class="learn-img"
-          />
+          /> -->
         </div>
       </section>
       <section class="skills">
@@ -67,7 +69,7 @@
               high-quality courses and resources – all designed for adult
               language learners.
             </p>
-            <button class="skills-button">Learn more</button>
+            <button type="button" class="skills-button">Learn more</button>
           </li>
           <li class="skills-item">
             <img src="img/writing.png" alt="writing" class="skills-img" />
@@ -76,7 +78,7 @@
               One of the most important and extensive areas of natural science,
               the science that studies substances, also their composition
             </p>
-            <button class="skills-button">Learn more</button>
+            <button type="button" class="skills-button">Learn more</button>
           </li>
           <li class="skills-item">
             <img src="img/reading.png" alt="reading" class="skills-img" />
@@ -85,7 +87,7 @@
               perception and response actions of the user resulting from the use
               and/or upcoming use of the product, system or service
             </p>
-            <button class="skills-button">Learn more</button>
+            <button type="button" class="skills-button">Learn more</button>
           </li>
           <li class="skills-item">
             <img src="img/listening.png" alt="listening" class="skills-img" />
@@ -94,7 +96,7 @@
               Here you can find activities to practise your listening skills.
               Listening will help you to improve your understanding
             </p>
-            <button class="skills-button">Learn more</button>
+            <button type="button" class="skills-button">Learn more</button>
           </li>
         </ul>
       </section>
@@ -111,7 +113,7 @@
           </p>
           <ul class="about-us-list">
             <li class="about-us-item">
-              <h3 class="about-us-number">800</h3>
+              <span class="about-us-number">800 </span>
               <p class="about-us-text">Pupils</p>
             </li>
             <li class="about-us-item">
@@ -136,27 +138,10 @@
               class="pricing-img"
             />
             <h3 class="pricing-description">Self-study online course</h3>
-            <p
-              class="pricing-paragraph"
-              Start
-              learning
-              English
-              online
-              in
-              live
-              classes
-              with
-              qualified
-              EC
-              teachers
-              and
-              students
-              from
-              all
-              over
-              the
-              world.
-            ></p>
+            <p class="pricing-paragraph">
+              Start learning English online in live classes with qualified EC
+              teachers and students from all over the world.
+            </p>
             <div>
               <p class="pricing-price">£5.99</p>
               <p class="pricing-text">per month</p>
@@ -187,9 +172,9 @@
         </ul>
       </section>
       <section class="contact-us">
-        <div>
+        <!-- <div>
           <img src="img/contact.png" alt="contact" />
-        </div>
+        </div> -->
         <div>
           <h2 class="contact-us-title">Contact Us</h2>
           <p class="contact-us-text">
@@ -201,12 +186,26 @@
             <label>
               <input type="email" name="email" />
             </label>
-          
-            <button type="subscribe">Subscribe</button>
+
+            <button type="submit">Subscribe</button>
           </form>
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+        <hr class="footer-line">
+        <a href="#" class="footer-logo">Brit <span class="footer-logo-span">lex</span></a>
+        <ul class="footer-list">
+            <li class="footer-item">
+                <a class="footer-link" href="#">Terms and Conditions</a>
+            </li>
+            <li class="footer-item">
+                <a class="footer-link" href="#">• Privacy Policy</a>
+            </li>
+            <li class="footer-item">
+                <a class="footer-link" href="#">• Cookie Policys</a>
+            </li>
+        </ul>
+    </footer>
   </body>
 </html>
