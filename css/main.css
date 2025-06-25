@@ -111,6 +111,13 @@ main {
   }
 }
 
+.header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding-top: 36px;
+  margin-bottom: 46px;
+}
 .header .header-logo {
   font-size: 24px;
   font-weight: 400;
@@ -127,6 +134,7 @@ main {
   font-weight: 500;
 }
 .header .header-button {
+  display: none;
   font-size: 24px;
   font-weight: 400;
   padding: 17px 57px;
@@ -134,7 +142,20 @@ main {
   border-radius: 5px;
   border: 2px solid #263238;
 }
+@media screen and (min-width: 575px) {
+  .header {
+    padding-top: 39px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .header {
+    margin-bottom: 30px;
+  }
+}
 @media screen and (min-width: 992px) {
+  .header {
+    margin-bottom: 42px;
+  }
   .header .header-navigation {
     display: flex;
     justify-content: space-around;
@@ -151,23 +172,30 @@ main {
   .header .header-button {
     display: flex;
   }
+  .header .header-icon-menu {
+    display: none;
+  }
 }
 @media screen and (min-width: 1350px) {
+  .header {
+    margin-bottom: 76px;
+  }
   .header .header-item-link {
     font-size: 20px;
   }
 }
 
-.learn-title {
-  color: #000;
-  font-family: Poppins;
-  font-size: 64px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 80px; /* 125% */
+.learn {
+  background-image: url(../../img/Learning-languages-bro-1.png);
 }
-
-.learn-text {
+.learn .learn-title {
+  color: #000;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.5; /* 150% */
+}
+.learn .learn-text {
   color: #8F95A5;
   font-family: Poppins;
   font-size: 24px;
@@ -175,17 +203,39 @@ main {
   font-weight: 400;
   line-height: normal;
 }
-
-.learn-button {
+.learn .learn-button {
   color: #FFF;
   font-family: Poppins;
   font-size: 36px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  width: 438px;
-  height: 118px;
+  padding: 18px 99px;
   flex-shrink: 0;
   border-radius: 15px;
   background: #263238;
+}
+@media screen and (min-width: 575px) {
+  .learn .learn-title {
+    font-size: 34px;
+    line-height: 1.32; /* 132.353% */
+  }
+}
+@media screen and (min-width: 767px) {
+  .learn .learn-title {
+    font-size: 36px;
+    line-height: 1.25; /* 125% */
+  }
+}
+@media screen and (min-width: 992px) {
+  .learn .learn-title {
+    font-size: 48px;
+    line-height: 1.33; /* 133.333% */
+  }
+}
+@media screen and (min-width: 1350px) {
+  .learn .learn-title {
+    font-size: 64px;
+    line-height: 1.25; /* 125% */
+  }
 }/*# sourceMappingURL=main.css.map */

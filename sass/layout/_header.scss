@@ -1,4 +1,9 @@
 .header{
+display: flex;
+align-items: baseline;
+justify-content: space-between;
+padding-top: 36px;
+margin-bottom: 46px;
 
 .header-logo{
 font-size: 24px;
@@ -28,7 +33,7 @@ font-weight: 500;
 }
 
 .header-button{
- 
+    display: none;
 font-size: 24px;
 font-weight: 400;
 padding: 17px 57px;
@@ -38,15 +43,17 @@ border: 2px solid #263238;
 }
 
 @media screen and (min-width:575px) {
-
+padding-top: 39px;
 }
 
 @media screen and (min-width:767px) {
-
+margin-bottom: 30px;
     
 }
 @media screen and (min-width:992px) {
+   margin-bottom: 42px;
    
+
     .header-navigation{
         display: flex;
         justify-content: space-around;
@@ -67,8 +74,14 @@ border: 2px solid #263238;
         display: flex;
     }
 
+    .header-icon-menu{
+        display: none;
+    }
+
 }
 @media screen and (min-width:1350px) {
+   margin-bottom: 76px;
+   
     .header-item-link{
         font-size: 20px;
     }

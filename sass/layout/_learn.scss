@@ -1,15 +1,16 @@
-.learn{}
-
+.learn{
+background-image: url(../../img/Learning-languages-bro-1.png);
 .learn-wrap{}
 
 .learn-title{
-    color: #000;
-font-family: Poppins;
-font-size: 64px;
-font-style: normal;
+color: #000;
+text-align: center;
+font-size: 24px;
 font-weight: 600;
-line-height: 80px; /* 125% */
+line-height: 1.5; /* 150% */
 }
+
+
 
 .learn-text{
     color: #8F95A5;
@@ -26,9 +27,41 @@ font-size: 36px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
-width: 438px;
-height: 118px;
+padding: 18px 99px;
 flex-shrink: 0;
 border-radius: 15px;
 background: #263238;
+}
+
+@media screen and (min-width:575px) {
+
+    .learn-title{
+font-size: 34px;
+line-height: 1.32; /* 132.353% */
+    }
+
+}
+
+@media screen and (min-width:767px) {
+    
+    .learn-title{
+font-size: 36px;
+line-height: 1.25; /* 125% */
+    }
+
+}
+@media screen and (min-width:992px) {
+    .learn-title{
+        font-size: 48px;
+        line-height: 1.33; /* 133.333% */}
+
+}
+@media screen and (min-width:1350px) {
+
+.learn-title{
+    font-size: 64px;
+line-height: 1.25; /* 125% */
+}
+}
+
 }

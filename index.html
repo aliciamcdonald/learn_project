@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>learn</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,9 +20,11 @@
     <link rel="stylesheet" href="css/main.min.css" />
   </head>
   <body>
-    <header class="header" id="header">
-        <nav class="header-navigation">
-      <a href="#" class="header-logo">Brit <span class="header-logo-span">lex</span></a>
+    <header class="header container" id="header">
+      <a href="#" class="header-logo"
+        >Brit<span class="header-logo-span">lex</span></a
+      >
+      <nav class="header-navigation">
         <ul class="header-list">
           <li class="header-item">
             <a class="header-item-link" href="#">Home</a>
@@ -34,11 +42,14 @@
             <a class="header-item-link" href="#">Contacts</a>
           </li>
         </ul>
-        <button class="header-button">Let’s Talk</button>
-    </nav>
+      </nav>
+      <button class="header-button">Let’s Talk</button>
+      <svg height="19" width="33" class="header-icon-menu">
+        <use href="./img/symbol-defs.svg#menu"></use>
+      </svg>
     </header>
     <main>
-      <section class="learn" id="learn">
+      <section class="learn container" id="learn">
         <div class="learn-wrap">
           <h1 class="learn-title">Learn Any Foreign Language</h1>
           <p class="learn-text">
@@ -193,19 +204,21 @@
       </section>
     </main>
     <footer class="footer">
-        <hr class="footer-line">
-        <a href="#" class="footer-logo">Brit <span class="footer-logo-span">lex</span></a>
-        <ul class="footer-list">
-            <li class="footer-item">
-                <a class="footer-link" href="#">Terms and Conditions</a>
-            </li>
-            <li class="footer-item">
-                <a class="footer-link" href="#">• Privacy Policy</a>
-            </li>
-            <li class="footer-item">
-                <a class="footer-link" href="#">• Cookie Policys</a>
-            </li>
-        </ul>
+      <hr class="footer-line" />
+      <a href="#" class="footer-logo"
+        >Brit <span class="footer-logo-span">lex</span></a
+      >
+      <ul class="footer-list">
+        <li class="footer-item">
+          <a class="footer-link" href="#">Terms and Conditions</a>
+        </li>
+        <li class="footer-item">
+          <a class="footer-link" href="#">• Privacy Policy</a>
+        </li>
+        <li class="footer-item">
+          <a class="footer-link" href="#">• Cookie Policys</a>
+        </li>
+      </ul>
     </footer>
   </body>
 </html>
