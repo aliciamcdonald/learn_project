@@ -2,8 +2,8 @@
  .container {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 11px;
-  padding-right: 11px;
+  padding-left: 10px;
+  padding-right: 10px;
 //   width: 1200px;
 min-width: 320px;
 @media screen and (min-width:575px) {
@@ -12,7 +12,8 @@ min-width: 320px;
 
 @media screen and (min-width:767px) {
     width: 767px;
-    
+    padding-left: 39px;
+    padding-right: 39px;
 }
 @media screen and (min-width:992px) {
     width: 992px;
