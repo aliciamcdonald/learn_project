@@ -383,6 +383,7 @@ main {
   font-weight: 500;
   margin-top: 37px;
   padding: 14px 43px;
+  align-self: flex-start;
 }
 @media screen and (min-width: 575px) {
   .skills .skills-list {
@@ -413,6 +414,11 @@ main {
     height: 137px;
     flex-shrink: 0;
   }
+  .skills .skills-item:nth-child(4) .skills-img .skills-item-wrap-descr {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
   .skills .skills-text {
     width: auto;
     flex-grow: 1;
@@ -426,14 +432,19 @@ main {
   }
 }
 @media screen and (min-width: 767px) {
-  .skills {
-    grid-row: span 2/span 2;
-  }
   .skills .skills-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px 10px;
+    grid-template-areas: "item_1 item_2 item_3" "item_1 item_2 item_3" "item_1 item_4 item_4";
+    align-items: stretch;
+    height: 662px;
+  }
+  .skills .skills-item {
+    height: auto;
+    width: auto;
+    padding-bottom: 26px;
   }
   .skills .skills-item:nth-child(1) .skills-img {
     width: 214px;
@@ -441,26 +452,54 @@ main {
   }
   .skills .skills-item:nth-child(2) .skills-img {
     width: 200px;
-    height: 200px;
+    height: 182px;
   }
   .skills .skills-item:nth-child(3) .skills-img {
-    width: 228px;
-    height: 142px;
+    width: 216px;
+    height: 144px;
   }
   .skills .skills-item:nth-child(4) .skills-img {
     width: 202px;
     height: 134px;
   }
   .skills .skills-item:nth-child(1) {
-    grid-row: span 3/span 3;
+    grid-area: item_1;
+  }
+  .skills .skills-item:nth-child(1) .skills-text {
+    flex-grow: 0;
+  }
+  .skills .skills-item:nth-child(1) .skills-button {
+    margin-top: 65px;
+  }
+  .skills .skills-item:nth-child(2) {
+    grid-area: item_2;
+  }
+  .skills .skills-item:nth-child(2) .skills-description {
+    line-height: normal;
+    margin-bottom: 15px;
   }
   .skills .skills-item:nth-child(3) {
-    grid-row: span 2/span 2;
+    grid-area: item_3;
   }
   .skills .skills-item:nth-child(4) {
-    grid-column: span 2/span 2;
-    grid-column-start: 2;
-    grid-row-start: 3;
+    grid-area: item_4;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .skills .skills-item:nth-child(4) .skills-img {
+    align-self: flex-end;
+  }
+  .skills .skills-item-wrap-descr {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  .skills .skills-description {
+    line-height: 4;
+  }
+  .skills .skills-button {
+    margin-top: 10px;
   }
 }
 @media screen and (min-width: 992px) {
