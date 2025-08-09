@@ -1,0 +1,250 @@
+.pricing {
+  text-align: center;
+  margin-bottom: 72px;
+
+  .pricing-title {
+    color: #000;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 80px; /* 333.333% */
+    margin-bottom: 49px;
+  }
+
+  .pricing-list {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+  }
+
+  .pricing-item {
+    display: flex;
+    flex-direction: column;
+    // flex-basis: ;
+  }
+
+  .pricing-img {
+    width: 248px;
+    // height: 248px;
+    margin-bottom: 28px;
+    margin: 0 auto;
+  }
+
+  .pricing-description {
+    color: #263238;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; /* 155.556% */
+    margin-bottom: 17px;
+  }
+
+  .pricing-paragraph {
+    color: #8f95a5;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 33px;
+    flex-grow: 1;
+  }
+
+  .pricing-btn {
+    font-weight: 400;
+    font-size: 14px;
+    color: #546269;
+    border: none;
+    border-radius: 5px;
+    background: #eee;
+    padding: 6px 17px;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 18px;
+    margin: 0 auto;
+    & > span {
+      color: #263238;
+      font-size: 18px;
+    }
+  }
+
+  @media screen and (min-width: 575px) {
+    margin-bottom: 163px;
+
+    .pricing-title {
+      font-size: 30px;
+      margin-bottom: 54px;
+    }
+
+    .pricing-item:nth-child(1) > .pricing-img {
+      width: 291px;
+      height: 291px;
+    }
+
+    .pricing-item:nth-child(2) > .pricing-img {
+      width: 314px;
+    //   height: 241px;
+    }
+
+    .pricing-item:nth-child(3) > .pricing-img {
+      width: 253px;
+      height: 253px;
+    }
+
+    .pricing-img {
+      margin: 0 auto;
+      margin-bottom: 29px;
+    }
+
+    .pricing-description {
+      font-size: 24px;
+      margin-bottom: 23px;
+    }
+
+    .pricing-paragraph {
+      font-size: 14px;
+      margin-bottom: 31px;
+      width: 390px;
+      margin: 0 auto;
+    }
+
+    .pricing-btn {
+      font-size: 16px;
+      gap: 13px;
+      padding: 8px 12px;
+      & > span {
+        font-size: 24px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 767px) {
+    margin-bottom: 65px;
+
+    .pricing-title {
+      font-size: 30px;
+      margin-bottom: 31px;
+    }
+
+    .pricing-list {
+      flex-direction: row;
+      gap: 35px;
+    }
+
+    .pricing-item:nth-child(1) > .pricing-img {
+      width: 197px;
+      height: 197px;
+    }
+
+    .pricing-item:nth-child(2) > .pricing-img {
+      width: 219px;
+    //   height: 168px;
+    }
+
+    .pricing-item:nth-child(3) > .pricing-img {
+      width: 210px;
+      height: 210px;
+    }
+
+    .pricing-img {
+      margin-bottom: 23px;
+    }
+
+    .pricing-description {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+
+    .pricing-paragraph {
+      margin-bottom: 23px;
+      width: 206px;
+    }
+
+    .pricing-btn {
+      gap: 22px;
+      & > span {
+        font-size: 22px;
+      }
+    }
+  }
+  @media screen and (min-width: 992px) {
+    .pricing-title {
+      font-size: 36px;
+      margin-bottom: 22px;
+    }
+
+    .pricing-list {
+      gap: 64px;
+    }
+
+    .pricing-item:nth-child(1) > .pricing-img {
+      width: 222px;
+      height: 222px;
+    }
+
+    .pricing-item:nth-child(2) > .pricing-img {
+      width: 267px;
+    //   height: 195px;
+    margin-bottom: 54px;
+    }
+
+    .pricing-item:nth-child(3) > .pricing-img {
+      width: 242px;
+      height: 242px;
+    }
+    .pricing-img {
+      margin-bottom: 20px;
+    }
+
+    .pricing-description {
+      font-size: 22px;
+      margin-bottom: 14px;
+    }
+
+    .pricing-paragraph {
+      margin-bottom: 31x;
+    }
+  }
+  @media screen and (min-width: 1350px) {
+    .pricing-title {
+      font-size: 48px;
+      margin-bottom: 57px;
+    }
+
+    .pricing-list {
+      gap: 105px;
+    }
+
+    .pricing-item:nth-child(1) > .pricing-img {
+      width: 311px;
+      height: 311px;
+    }
+
+    .pricing-item:nth-child(2) > .pricing-img {
+      width: 391px;
+    //   height: 283px;
+    margin-bottom: 90px;
+    }
+
+    .pricing-item:nth-child(3) > .pricing-img {
+      width: 340px;
+      height: 340px;
+    }
+    .pricing-img {
+      margin-bottom: 40px;
+    }
+
+    .pricing-description {
+        font-size: 30px;
+        margin-bottom: 19px;
+    }
+
+    .pricing-paragraph {
+      margin-bottom: 29x;
+    }
+  }
+}

@@ -116,9 +116,10 @@
           </li>
         </ul>
       </section>
-      <section class="about-us">
-        <div>
+      <section class="about-us container">
+        <div class="about-us-wrap">
           <h2 class="about-us-title">About Us</h2>
+          <img class="about-us-img" src="img/about-us.png" alt="about-us" />
           <p class="about-us-paragrph">
             The model offers a framework for discussing problems related to the
             user's experience, as well as possible ways and means of solving
@@ -129,7 +130,7 @@
           </p>
           <ul class="about-us-list">
             <li class="about-us-item">
-              <span class="about-us-number">800 </span>
+              <h3 class="about-us-number">800 </h3>
               <p class="about-us-text">Pupils</p>
             </li>
             <li class="about-us-item">
@@ -142,9 +143,8 @@
             </li>
           </ul>
         </div>
-        <img src="img/about-us.png" alt="about-us" />
       </section>
-      <section class="pricing">
+      <section class="pricing container">
         <h2 class="pricing-title">Pricing</h2>
         <ul class="pricing-list">
           <li class="pricing-item">
@@ -158,10 +158,11 @@
               Start learning English online in live classes with qualified EC
               teachers and students from all over the world.
             </p>
-            <div>
+            <!-- <div class="pricing-offer-wrap">
               <p class="pricing-price">£5.99</p>
               <p class="pricing-text">per month</p>
-            </div>
+            </div> -->
+            <button class="pricing-btn" type="button"><span>£5.99</span> per month</button>
           </li>
           <li class="pricing-item">
             <img src="img/online.png" alt="online" class="pricing-img" />
@@ -169,10 +170,7 @@
             <p class="pricing-paragraph">
               Interactive group classes with expert teachers. Free 7-day trial
             </p>
-            <div>
-              <p class="pricing-price">£12.99</p>
-              <p class="pricing-text">per month</p>
-            </div>
+            <button class="pricing-btn" type="button"><span>£5.99</span> per month</button>
           </li>
           <li class="pricing-item">
             <img src="img/tuition.png" alt="tuition" class="pricing-img" />
@@ -180,33 +178,52 @@
             <p class="pricing-paragraph">
               Interactive group classes with expert teachers. Free 7-day trial
             </p>
-            <div>
-              <p class="pricing-price">£12.99</p>
-              <p class="pricing-text">per month</p>
-            </div>
+            <button class="pricing-btn" type="button"><span>£5.99</span> per month</button>
           </li>
         </ul>
       </section>
-      <section class="contact-us">
-        <!-- <div>
-          <img src="img/contact.png" alt="contact" />
-        </div> -->
+      <!-- <section class="contact-us container">
         <div>
           <h2 class="contact-us-title">Contact Us</h2>
+          <div class="contact-us-bg"></div>
+      
           <p class="contact-us-text">
             Discover your current English level by taking our free online
             English test.Sign up to our newsletter for learning tips and free
             resources
           </p>
-          <form>
+          <form class="contact-us-form">
             <label>
-              <input type="email" name="email" />
+              <input class="contact-us-email" type="email" name="email" 
+              placeholder="Enter Your E-mail"/>
             </label>
 
-            <button type="submit">Subscribe</button>
+            <butto class="contact-us-submit" type="submit">Subscribe</button>
           </form>
         </div>
+        </div>
+      </section> -->
+      <section class="contact">
+        <div class="contact__container">
+          <div class="contact__image">
+            <img src="./img/contact.png" alt="Boy throwing paper plane" />
+          </div>
+      
+          <div class="contact__content">
+            <h2>Contact Us</h2>
+            <p>
+              Discover your current English level by taking our free online English test.
+              Sign up to our newsletter for learning tips and free resource
+            </p>
+      
+            <form class="contact__form">
+              <input type="email" placeholder="Enter Your E-mail" />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
       </section>
+      
     </main>
     <footer class="footer">
       <hr class="footer-line" />
