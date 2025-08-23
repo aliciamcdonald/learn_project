@@ -688,7 +688,7 @@ main {
 
 .pricing {
   text-align: center;
-  margin-bottom: 72px;
+  margin-bottom: 190px;
 }
 .pricing .pricing-title {
   color: #000;
@@ -897,76 +897,144 @@ main {
   }
 }
 
-.contact {
-  padding: 2rem;
-  background-color: #fff;
+.contact-us {
+  text-align: center;
+  margin-bottom: 57px;
 }
-.contact__container {
+.contact-us .contact-us-title {
+  color: #000;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 3.33; /* 333.333% */
+  margin-top: -410px;
+  margin-bottom: 325px;
+}
+.contact-us .contact-us-wrap {
+  margin: 0 auto;
+  margin-bottom: 38px;
+  width: 253px;
+}
+.contact-us .contact-us-text {
+  color: #8f95a5;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 31px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+.contact-us .contact-us-email {
+  color: #8f95a5;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-left: 25px;
+  border-radius: 5px;
+  border: 1px solid #8f95a5;
+  width: 291px;
+  height: 60px;
+  flex-shrink: 0;
+  margin: 0 auto;
+  margin-bottom: 17px;
+}
+.contact-us .contact-us-submit {
+  width: 290px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: #263238;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0 auto;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+}
+@media screen and (min-width: 575px) {
+  .contact-us .contact-us-title {
+    font-size: 30px;
+    margin-top: -460px;
+    margin-bottom: 350px;
+  }
+  .contact-us .contact-us-wrap {
+    width: 358px;
+    margin-bottom: 34px;
+  }
+  .contact-us .contact-us-text {
+    font-size: 16px;
+    margin-bottom: 31px;
+  }
+  .contact-us .contact-us-form {
+    display: flex;
+  }
+}
+.footer {
   text-align: center;
 }
-@media (min-width: 768px) {
-  .contact__container {
-    flex-direction: row;
-    align-items: flex-start;
-    text-align: left;
-    justify-content: space-between;
-    gap: 3rem;
-  }
+.footer .footer-logo {
+  color: #000;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
-.contact__image img {
-  max-width: 250px;
-  height: auto;
+.footer .footer-logo-span {
+  color: #939393;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: -6px;
 }
-@media (min-width: 768px) {
-  .contact__image img {
-    max-width: 300px;
-  }
-}
-.contact__content {
-  max-width: 500px;
-}
-.contact__content h2 {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-.contact__content p {
-  color: #8d93a3;
-  line-height: 1.6;
-  margin-bottom: 2rem;
-}
-.contact__form {
+.footer .footer-list {
+  color: #8F95A5;
+  font-family: Poppins;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
   display: flex;
-  flex-direction: column;
-  gap: 1rem;
 }
-.contact__form input {
-  padding: 1rem;
-  border: 1px solid #b2b7c2;
-  border-radius: 8px;
-  font-size: 1rem;
-}
-.contact__form button {
-  padding: 1rem;
-  background-color: #212b36;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 1rem;
-}
-@media (min-width: 768px) {
-  .contact__form {
-    flex-direction: row;
+@media screen and (min-width: 575px) {
+  .footer {
+    display: flex;
+    justify-content: space-around;
     align-items: center;
   }
-  .contact__form input {
-    flex: 1;
+  .footer .footer-logo {
+    font-size: 30px;
   }
-  .contact__form button {
-    margin-left: 1rem;
+  .footer .footer-logo-span {
+    font-size: 30px;
+  }
+  .footer .footer-list {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .footer .footer-list {
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .footer .footer-list {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1350px) {
+  .footer .footer-logo {
+    font-size: 36px;
+  }
+  .footer .footer-list {
+    font-size: 24px;
   }
 }/*# sourceMappingURL=main.css.map */
