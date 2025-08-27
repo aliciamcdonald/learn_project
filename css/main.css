@@ -974,6 +974,34 @@ main {
   .contact-us .contact-us-form {
     display: flex;
   }
+  .contact-us .contact-us-form .contact-us-email {
+    margin-right: -3px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+  }
+}
+@media screen and (min-width: 767px) {
+  .contact-us {
+    display: flex;
+    gap: 38px;
+  }
+  .contact-us .contact-us-wrap {
+    width: 233px;
+    align-self: center;
+    margin: 0 auto;
+  }
+  .contact-us .contact-us-content {
+    width: 434px;
+  }
+  .contact-us .contact-us-title {
+    margin: 0;
+  }
+  .contact-us .contact-us-email {
+    width: 253px;
+  }
+  .contact-us .contact-us-submit {
+    width: 154px;
+  }
 }
 .footer {
   text-align: center;

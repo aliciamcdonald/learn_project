@@ -63,14 +63,13 @@
   }
 
   @media screen and (min-width: 575px) {
-
     .contact-us-title {
       font-size: 30px;
-       margin-top: -460px;
+      margin-top: -460px;
       margin-bottom: 350px;
     }
 
-    .contact-us-wrap{
+    .contact-us-wrap {
       width: 358px;
       margin-bottom: 34px;
     }
@@ -80,14 +79,39 @@
       margin-bottom: 31px;
     }
 
-.contact-us-form{
-    display: flex;
-}
-
+    .contact-us-form {
+      display: flex;
+      & .contact-us-email {
+        margin-right: -3px;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+      }
+    }
   }
 
   @media screen and (min-width: 767px) {
+    display: flex;
+    gap: 38px;
 
+    .contact-us-wrap {
+      width: 233px;
+      align-self: center;
+      margin: 0 auto;
+    }
+
+    .contact-us-content {
+      width: 434px;
+    }
+
+    .contact-us-title {
+      margin: 0;
+    }
+    .contact-us-email {
+      width: 253px;
+    }
+    .contact-us-submit {
+      width: 154px;
+    }
   }
   @media screen and (min-width: 992px) {
   }
