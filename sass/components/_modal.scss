@@ -1,0 +1,56 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    padding: 15px;
+    background-color: #ffffff;
+    transform: translate(-50%, -50%);
+  }
+  .modal-logo {
+    @extend .header-logo;
+    color: red;
+    & > .modal-logo-span {
+      @extend .header-logo-span;
+    }
+  }
+
+  .modal-close-btn {
+    background: transparent;
+    border: none;
+  }
+  .modal-line {
+  }
+  .modal-list {
+  }
+  .modal-item {
+  }
+  .modal-link {
+  }
+  .modal-button {
+  }
+
+  @media screen and (min-width: 575px) {
+  }
+  @media screen and (min-width: 767px) {
+  }
+  @media screen and (min-width: 992px) {
+  }
+  @media screen and (min-width: 1350px) {
+  }
+}
