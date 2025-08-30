@@ -120,27 +120,27 @@ main {
   padding-top: 36px;
   margin-bottom: 46px;
 }
-.header .header-logo, .header .backdrop .modal-logo, .backdrop .header .modal-logo {
+.header-logo, .backdrop .modal-logo {
   font-size: 24px;
   font-weight: 400;
 }
-.header .header-logo-span, .header .backdrop .modal-logo > .modal-logo-span, .backdrop .header .modal-logo > .modal-logo-span {
+.header-logo-span, .backdrop .modal-logo > .modal-logo-span {
   color: #939393;
 }
-.header .header-navigation {
+.header-navigation {
   display: none;
 }
-.header .header-item-link {
+.header-item-link {
   color: #263238;
   font-size: 20px;
   font-weight: 500;
 }
-.header .header-button {
+.header-button {
   display: none;
   font-size: 24px;
   font-weight: 400;
   padding: 17px 57px;
-  background-color: #FFF;
+  background-color: #fff;
   border-radius: 5px;
   border: 2px solid #263238;
 }
@@ -209,9 +209,6 @@ main {
   padding: 15px;
   background-color: #ffffff;
   transform: translate(-50%, -50%);
-}
-.backdrop .modal-logo {
-  color: red;
 }
 .backdrop .modal-close-btn {
   background: transparent;

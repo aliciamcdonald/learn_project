@@ -24,7 +24,7 @@
   }
   .modal-logo {
     @extend .header-logo;
-    color: red;
+
     & > .modal-logo-span {
       @extend .header-logo-span;
     }
