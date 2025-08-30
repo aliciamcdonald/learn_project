@@ -114,9 +114,65 @@
     }
   }
   @media screen and (min-width: 992px) {
+    display: flex;
+    justify-content: space-between;
+    text-align: start;
+
+    .contact-us-wrap {
+      width: 312px;
+      height: 281px;
+      margin: 0;
+      & img {
+      }
+    }
+
+    .contact-us-text {
+      padding: 0;
+      text-align: start;
+    }
+
+    .contact-us-email {
+      width: 323px;
+    }
   }
   @media screen and (min-width: 1350px) {
+    .contact-us-title {
+      font-size: 46px;
+      line-height: 1.66;
+      margin: 37px;
+
+    }
+
+    .contact-us-wrap {
+      width: 477px;
+      height: 429px;
+    }
+
+    .contact-us-text {
+      font-size: 20px;
+    }
+
+    .contact-us-content {
+      width: 713px;
+    }
+  
+    .contact-us-form{
+
+      
+      & .contact-us-email {
+        width: 450px;
+        height: 80px;
+        border-radius: 10px;
+        margin-right: 12px;
+        
+      }
+    }
+      
+  .contact-us-submit {
+    width: 264px;
+    height: 80px;
   }
+}
 }
 
 // .contact {
