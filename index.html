@@ -224,24 +224,32 @@
     </footer>
     <!-- ============================ Все модальные окна ============================= -->
 
-    <div class="backdrop">
+    <div class="backdrop is-hidden">
+      <!-- <div class="backdrop"> -->
       <div class="modal">
         <!-- =========== твоя разметка модального окна ================ -->
-        <a href="#" class="modal-logo"
-          >Brit<span class="modal-logo-span">lex</span></a
-        >
-        <button type="button" class="modal-close-btn">
-          <svg width="17" height="17">
-            <use href="img/symbol-defs.svg#close"></use>
-          </svg>
-        </button>
+
+        <div class="wrap-modal-header">
+          <a href="#" class="modal-logo"
+            >Brit<span class="modal-logo-span">lex</span></a
+          >
+          <button type="button" class="modal-close-btn">
+            <svg width="17" height="17">
+              <use href="img/symbol-defs.svg#close"></use>
+            </svg>
+          </button>
+        </div>
         <hr class="modal-line" />
         <ul class="modal-list">
-          <li class="modal-item"><a href="#" class="modal-link"></a>Home</li>
-          <li class="modal-item"><a href="#" class="modal-link"></a>Skills</li>
-          <li class="modal-item"><a href="#" class="modal-link"></a>About Us</li>
-          <li class="modal-item"><a href="#" class="modal-link"></a>Pricing</li>
-          <li class="modal-item"><a href="#" class="modal-link"></a>Contacts</li>
+          <li class="modal-item"><a href="#" class="modal-link">Home</a></li>
+          <li class="modal-item"><a href="#" class="modal-link">Skills</a></li>
+          <li class="modal-item">
+            <a href="#" class="modal-link">About Us</a>
+          </li>
+          <li class="modal-item"><a href="#" class="modal-link">Pricing</a></li>
+          <li class="modal-item">
+            <a href="#" class="modal-link">Contacts</a>
+          </li>
         </ul>
         <button type="button" class="modal-button">Let’s Talk</button>
       </div>
