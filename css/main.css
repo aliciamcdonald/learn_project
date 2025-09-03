@@ -214,6 +214,28 @@ main {
   background: transparent;
   border: none;
 }
+.backdrop .modal-line {
+  margin-bottom: 48px;
+}
+.backdrop .modal-link {
+  color: #263238;
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 65px; /* 295.455% */
+}
+.backdrop .modal-button {
+  color: #000;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 5px;
+  border: 2px solid #263238;
+  padding: 17px 101px;
+}
 .learn .learn-bg {
   width: 299px;
   height: 299px;
