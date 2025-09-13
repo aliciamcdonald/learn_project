@@ -26,11 +26,11 @@
       >
       <nav class="header-navigation">
         <ul class="header-list">
-          <li class="header-item">
+          <li class="header-item active">
             <a class="header-item-link" href="#">Home</a>
           </li>
           <li class="header-item">
-            <a class="header-item-link" href="#">Skills</a>
+            <a class="header-item-link" href="skills.html">Skills</a>
           </li>
           <li class="header-item">
             <a class="header-item-link" href="#">About Us</a>
@@ -44,7 +44,7 @@
         </ul>
       </nav>
       <button class="header-button">Let’s Talk</button>
-      <svg height="19" width="33" class="header-icon-menu">
+      <svg height="19" width="33" class="header-icon-menu" data-modal-open>
         <use href="./img/symbol-defs.svg#menu"></use>
       </svg>
     </header>
@@ -224,8 +224,8 @@
     </footer>
     <!-- ============================ Все модальные окна ============================= -->
 
-    <!-- <div class="backdrop is-hidden"> -->
-      <div class="backdrop">
+    <div class="backdrop is-hidden" data-modal>
+      <!-- <div class="backdrop"> -->
       <div class="modal">
         <!-- =========== твоя разметка модального окна ================ -->
 
@@ -233,7 +233,7 @@
           <a href="#" class="modal-logo"
             >Brit<span class="modal-logo-span">lex</span></a
           >
-          <button type="button" class="modal-close-btn">
+          <button type="button" class="modal-close-btn" data-modal-close>
             <svg width="17" height="17">
               <use href="img/symbol-defs.svg#close"></use>
             </svg>
