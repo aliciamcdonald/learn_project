@@ -28,7 +28,12 @@
     color: #263238;
     font-size: 20px;
     font-weight: 500;
+
+    &:hover {
+  color: #6b91da;
+    }
   }
+
 
   &-button {
     display: none;

@@ -135,6 +135,9 @@ main {
   font-size: 20px;
   font-weight: 500;
 }
+.header-item-link:hover {
+  color: #6b91da;
+}
 .header-button {
   display: none;
   font-size: 24px;
